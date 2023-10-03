@@ -1,13 +1,12 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-import craft from '../../images/craft.png'
 
-const SideNav = styled.div`
-    position: absolute;
-    left: auto;
-    top: 50%;
+
+const SideNav = styled.button`
+    position: absolute;  
     padding: 15px;
     width: 100px;
+    right: 0;
     text-decoration: none;
     font-size: 20px;
     color: white;
@@ -21,15 +20,21 @@ const SideNav = styled.div`
     align-items: center;
     text-align: center;
 `
+ 
 
-function Side() {
-    return (
+function AdvBtn() {
+    if(document.URL.includes("/")){
+      var a = "Aventura";
+    }else{
+        a = "Home";
+    }
+    return( 
         <SideNav>
-            <Link to="/"><p>Criação</p></Link>
+           <Link to ={`/${a.toLowerCase()}`}>{a}</Link>
             
             
         </SideNav>
     )
 }
 
-export default Side
+export default AdvBtn

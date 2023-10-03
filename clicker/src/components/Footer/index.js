@@ -7,7 +7,10 @@ const HeaderContainer = styled.header`
     display: flex;
     justify-content: center;
     width: 100%;
+    height: 100%;
+    padding: 10px;
     
+
 `
 
 function Footer() {

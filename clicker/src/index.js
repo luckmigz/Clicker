@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header'
 import Footer from './components/Footer';
 import Home from './routes/Home';
-
+import Side from './components/CraftBtn';
 
 
 const GlobalStyle = createGlobalStyle`
@@ -16,6 +16,7 @@ const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     backgroun-color: black;
+   
   }
 
   code {
@@ -34,7 +35,7 @@ root.render(
     <GlobalStyle />
     <BrowserRouter>
       <Header /> 
-        
+      <Side />
       <Routes>
         <Route path = "/" element = {<Home />} /> 
       </Routes>

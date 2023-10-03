@@ -7,10 +7,12 @@ const HeaderContainer = styled.header`
     display: flex;
     justify-content: center;
     width: 100%;
+    height: 100%;
+    padding: 10px;
     
 
 `
-const Coins = styled.p`
+const Coins = styled.label`
     font-size: 16px;
     display: flex;
     justify-content: center;

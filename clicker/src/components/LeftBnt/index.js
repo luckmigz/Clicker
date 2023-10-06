@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 //import craft from '../../images/craft.png'
+import { useState } from 'react';
 
 const SideNav = styled.button`
     position: absolute;  
@@ -21,16 +22,23 @@ const SideNav = styled.button`
     text-align: center;
 `
 
+
 function LeftBnt() {
-    if(document.URL.includes("/")){
-        var a = "Criação";
+    var [ buttontTxt , setBtnTxt] = useState('Click');
+    console.log(buttontTxt); 
+    var url = window.location.href;
+    if(url.includes('/crafting')){
+        setBtnTxt = 'Home';
+        buttontTxt = ' ';
     }else{
-        a = "Home";
+        setBtnTxt = 'Criação';
+        buttontTxt = 'crafting';
     }
+     
+
     return( 
         <SideNav>
-           <Link to ={`/${a.toLowerCase()}`}>{a}</Link>
-            
+           <Link to ={`/${buttontTxt.toLowerCase()}`}>{setBtnTxt}</Link>
             
         </SideNav>
     )

@@ -6,8 +6,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header'
 import Footer from './components/Footer';
 import Home from './routes/Home';
-
-
+import Crafting from './routes/Crafting';
+import Adventure from './routes/Adventure';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -38,7 +38,9 @@ root.render(
       <Header /> 
       
       <Routes>
-        <Route path = "/" element = {<Home />} /> 
+        <Route path = "/" element = {<Home />} />
+        <Route path = "/crafting" element = {<Crafting/>} /> 
+        <Route path = "/explore" element = {<Adventure/>} /> 
       </Routes>
       <Footer />
     </BrowserRouter>

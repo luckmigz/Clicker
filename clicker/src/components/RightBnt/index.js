@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-
+import { useState} from 'react'
 
 const SideNav = styled.button`
     position: absolute;  
@@ -23,15 +23,21 @@ const SideNav = styled.button`
  
 
 function AdvBtn() {
-    if(document.URL.includes("/")){
-      var a = "Aventura";
+    var [ buttontTxt , setBtnTxt] = useState('Click');
+     
+    var url = window.location.href;
+    if(url.includes('/explore')){
+        setBtnTxt = 'Home';
+        buttontTxt = ' ';
     }else{
-        a = "Home";
+        setBtnTxt = 'Aventura';
+        buttontTxt = 'explore';
     }
+     
+
     return( 
         <SideNav>
-           <Link to ={`/${a.toLowerCase()}`}>{a}</Link>
-            
+           <Link to ={`/${buttontTxt.toLowerCase()}`}>{setBtnTxt}</Link>
             
         </SideNav>
     )

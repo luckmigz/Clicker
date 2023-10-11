@@ -25,7 +25,7 @@ const SideNav = styled.button`
 
 function LeftBnt() {
     var [ buttontTxt , setBtnTxt] = useState('Click');
-    console.log(buttontTxt); 
+     
     var url = window.location.href;
     if(url.includes('/crafting')){
         setBtnTxt = 'Home';

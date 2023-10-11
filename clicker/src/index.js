@@ -41,6 +41,7 @@ root.render(
         <Route path = "/" element = {<Home />} />
         <Route path = "/crafting" element = {<Crafting/>} /> 
         <Route path = "/explore" element = {<Adventure/>} /> 
+        <Route path = "/explore" element = {<Adventure/>} /> 
       </Routes>
       <Footer />
     </BrowserRouter>

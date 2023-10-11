@@ -31,15 +31,16 @@ const Caixa = styled.div`
 
 const textoOpcoes = ['Inventario', 'Loja', 'Heróis','Melhorias']
 
+
 function OpcoesFooter() {
     return (
         
-            <Opcoes>
-                
-                { textoOpcoes.map( (texto) => (
-                   <Caixa> <Link to ={`/${texto.toLowerCase()}`}><Opcao><p>{texto}</p></Opcao></Link></Caixa>
-                ) ) }
-            </Opcoes>
+        <Opcoes>
+            
+            { textoOpcoes.map( (texto) => (
+                <Caixa> <Link onClick="texto='a'" to ={`/${texto.toLowerCase()}`}><Opcao><p>{texto}</p></Opcao></Link></Caixa>
+            ) ) }
+        </Opcoes>
       
     )
 }

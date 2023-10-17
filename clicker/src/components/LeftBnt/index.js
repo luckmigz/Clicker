@@ -3,6 +3,10 @@ import { Link } from 'react-router-dom'
 //import craft from '../../images/craft.png'
 import { useState } from 'react';
 
+const px2vw = (size, width = 1440) => `${((size/width)*100)/2}%`;
+
+
+
 const SideNav = styled.button`
     position: absolute;  
     padding: 15px;
@@ -20,6 +24,19 @@ const SideNav = styled.button`
     justify-content: center;
     align-items: center;
     text-align: center;
+
+    top: ${px2vw(1440)};
+
+    @media (min-width: 768px) {
+        top: ${px2vw(640)};
+        
+      }
+    
+      @media (min-width: 1024px) {
+        top: ${px2vw(1416)};
+        
+      }
+
 `
 
 

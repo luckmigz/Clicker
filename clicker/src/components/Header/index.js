@@ -12,7 +12,7 @@ const HeaderContainer = styled.header`
     
 
 `
-const Coins = styled.label`
+const Coins = styled.div`
     font-size: 16px;
     display: flex;
     justify-content: center;
@@ -23,6 +23,7 @@ const Coins = styled.label`
     min-width: 120px;
     color: white;
     font-weight: bold;
+    
 `
 const Home = styled.button`
     font-size: 16px;
@@ -30,6 +31,7 @@ const Home = styled.button`
     justify-content: flex-start;
     color: black;
     font-weight: bold;
+    left: 0;
 
 `
 

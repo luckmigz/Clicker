@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
+
+
 const Opcao = styled.li`
-    font-size: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,6 +18,7 @@ const Opcao = styled.li`
 
 const Opcoes = styled.ul`
     display: flex;
+    
 `
 const Caixa = styled.div`
     width: 200px;
@@ -24,21 +26,21 @@ const Caixa = styled.div`
     border: 1px solid black;
     padding: 10px;
     margin: 10px;
-   
-
+    align-self: center;
 
 `
 
-const textoOpcoes = ['Inventario', 'Loja', 'Heróis','Melhorias']
+const textoOpcoes = [{id: 1, name: "Invetario", link: "inventory"},{id: 2, name: "Loja", link: "shop"},{id: 3, name: "Heróis", link: "hero"},{id: 4, name: "Melhorias", link:"upgrades"}]
 
 
 function OpcoesFooter() {
+
     return (
         
         <Opcoes>
             
-            { textoOpcoes.map( (texto) => (
-                <Caixa> <Link onClick="texto='a'" to ={`/${texto.toLowerCase()}`}><Opcao><p>{texto}</p></Opcao></Link></Caixa>
+            { textoOpcoes.map( ({id,name,link}) => (
+                <Caixa> <Link to ={`/${link}`}><Opcao><p>{name}</p></Opcao></Link></Caixa>
             ) ) }
         </Opcoes>
       

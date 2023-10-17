@@ -8,15 +8,32 @@ import Footer from './components/Footer';
 import Home from './routes/Home';
 import Crafting from './routes/Crafting';
 import Adventure from './routes/Adventure';
+import Inventory from './routes/Inventory';
+import Heros from './routes/Heros';
+import Shop from './routes/Shop';
+import Upgrades from './routes/Upgrades';
+
+
+
 
 const GlobalStyle = createGlobalStyle`
+  * {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+
+  } 
+
+
+
   body {
-    margin: 0;
+    
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    backgroun-color: black;
-    overflow-x: hidden;
+    background-color: black;
+    
+    ovewflow: hidden;
     
   }
 
@@ -41,7 +58,12 @@ root.render(
         <Route path = "/" element = {<Home />} />
         <Route path = "/crafting" element = {<Crafting/>} /> 
         <Route path = "/explore" element = {<Adventure/>} /> 
-        <Route path = "/explore" element = {<Adventure/>} /> 
+        <Route path = "/inventory" element = {<Inventory/>} /> 
+        <Route path = "/hero" element = {<Heros/>} /> 
+        <Route path = "/shop" element = {<Shop/>} /> 
+        <Route path = "/upgrades" element = {<Upgrades/>} /> 
+
+
       </Routes>
       <Footer />
     </BrowserRouter>

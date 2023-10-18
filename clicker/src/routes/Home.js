@@ -15,7 +15,12 @@ const AppContainer = styled.div`
   background-image: linear-gradient(90deg,#FFFF44 35%,#000000 165%);
   width: ${px2vw(1415)};
   
-  
+  @media (min-width: 640px) {
+    width: ${px2vw(1440)};
+    min-height: ${px2vw(640)};
+    height: 100%;
+  }
+
   @media (min-width: 1024px){
     max-height: ${px2vh(1440)};
     flex-wrap: nowrap; 

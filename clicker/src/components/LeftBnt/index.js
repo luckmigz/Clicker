@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 //import craft from '../../images/craft.png'
 import { useState } from 'react';
 
-const px2vw = (size, width = 1440) => `${((size/width)*100)/2}%`;
+const px2vw = (size, width = 1440) => `${((size/width)*100)/2}vh`;
 
 
 
@@ -11,9 +11,9 @@ const SideNav = styled.button`
     position: absolute;  
     padding: 15px;
     width: 100px;
-    left: 0; 
+    left: 0;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 16px;
     color: white;
     border-radius: 0 5px 5px 0;
     border: 1px solid black;
@@ -27,15 +27,19 @@ const SideNav = styled.button`
 
     top: ${px2vw(1440)};
 
-    @media (min-width: 768px) {
+    @media (min-width: 400px){
+        top: ${px2vw(400)};
+    }
+    
+    @media (min-width: 640px) {
         top: ${px2vw(640)};
         
-      }
+    }
     
       @media (min-width: 1024px) {
         top: ${px2vw(1416)};
         
-      }
+    }
 
 `
 

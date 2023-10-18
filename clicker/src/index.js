@@ -21,7 +21,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
-
+    overflow-x: hidden;
   } 
 
 
@@ -32,10 +32,14 @@ const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: black;
-    
+    min-width: 640px;
     ovewflow: hidden;
     
+    
+
   }
+  
+
 
   code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;

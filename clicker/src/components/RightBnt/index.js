@@ -12,7 +12,7 @@ const SideNav = styled.button`
     width: 100px;
     right: 0;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 16px;
     color: white;
     border-radius: 0 5px 5px 0;
     border: 1px solid black;
@@ -26,15 +26,19 @@ const SideNav = styled.button`
 
     top: ${px2vw(1440)};
 
+    @media (min-width: 400px){
+        top: ${px2vw(400)};
+    }
+
     @media (min-width: 640px) {
         top: ${px2vw(640)};
         
-      }
+    }
     
-      @media (min-width: 1024px) {
+    @media (min-width: 1024px) {
         top: ${px2vw(1416)};
         
-      }
+    }
 
 `
  

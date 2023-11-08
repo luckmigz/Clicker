@@ -1,45 +1,43 @@
 import styled from 'styled-components'
 import LeftBnt from '../components/LeftBnt';
 import RightBnt from '../components/RightBnt';
+import Hero from '../components/HButtons';
 
 
 const px2vw = (size, width = 1440) => `${(size/width)*100}vw`;
-const px2vh = (size, height = 1440) => `${(size/height)*100}vh`;
+
 
 const AppContainer = styled.div`
   display: flex;
   justify-content: center;
   flex-wrap: wrap; 
-  margin: ${px2vw(10)};
   max-width: 100%;
-  background-image: linear-gradient(90deg,#FFFF44 35%,#000000 165%);
-  width: ${px2vw(1415)};
+  background: #202124;
+  padding-top: (32 / 45)*100%;
   
-  
-  @media (min-width: 1024px){
-    max-height: ${px2vh(1440)};
-    flex-wrap: nowrap; 
-
-  }
 `
-const Box = styled.div`
+const Background = styled.div`
   display:flex;
-  background-image: linear-gradient(90deg,#002F52 35%,#326589 165%);
-  width: ${px2vw(640)};
-  max-height: ${px2vw(640)};
+  background-color: #5B3109;
+  width: ${px2vw(1169)};
+  padding-top: (32 / 45)*100%;
   flex-direction: column;
   height: 100%;
+  flex-shrink: 0;
+  border: ${px2vw(30)} ridge rgba(140, 97, 14, 0.50);
 
   @media (min-width: 768px) {
-    width: ${px2vw(640)};
+    width: ${px2vw(1169)};
     min-height: ${px2vw(640)};
     height: 100%;
+    padding-top: (32 / 45)*100%;
   }
 
   @media (min-width: 1024px) {
-    width: ${px2vw(640)};
+    width: ${px2vw(1169)};
     min-height: ${px2vw(640)};
     height: 100%;
+    padding-top: (32 / 45)*100%;
   }
 `;
 
@@ -49,7 +47,9 @@ function Heros() {
     <AppContainer>
       <LeftBnt/>
       <RightBnt/>
-      <Box/> 
+      <Background>
+        <Hero />
+      </Background>
     </AppContainer>
   );
 }

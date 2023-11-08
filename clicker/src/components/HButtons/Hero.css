@@ -1,0 +1,255 @@
+.heros {
+    background-color: #5b3009;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .heros .div {
+    background-color: #5b3009;
+    height: 1024px;
+    position: relative;
+    width: 1440px;
+  }
+  
+  .heros .div-2 {
+    height: 765px;
+    left: 108px;
+    position: absolute;
+    top: 174px;
+    width: 638px;
+  }
+  
+  .heros .group {
+    height: 68px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 638px;
+  }
+  
+  .heros .rectangle {
+    background-color: #d9d9d9;
+    height: 68px;
+    left: 112px;
+    position: absolute;
+    top: 0;
+    width: 526px;
+  }
+  
+  .heros .rectangle-2 {
+    background-color: #d9d9d9;
+    height: 68px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 78px;
+  }
+  
+  .heros .group-2 {
+    height: 68px;
+    left: 0;
+    position: absolute;
+    top: 697px;
+    width: 638px;
+  }
+  
+  .heros .group-3 {
+    height: 68px;
+    left: 0;
+    position: absolute;
+    top: 299px;
+    width: 638px;
+  }
+  
+  .heros .group-4 {
+    height: 68px;
+    left: 0;
+    position: absolute;
+    top: 398px;
+    width: 638px;
+  }
+  
+  .heros .group-5 {
+    height: 68px;
+    left: 0;
+    position: absolute;
+    top: 199px;
+    width: 638px;
+  }
+  
+  .heros .group-6 {
+    height: 68px;
+    left: 0;
+    position: absolute;
+    top: 597px;
+    width: 638px;
+  }
+  
+  .heros .group-7 {
+    height: 68px;
+    left: 0;
+    position: absolute;
+    top: 100px;
+    width: 638px;
+  }
+  
+  .heros .group-8 {
+    height: 68px;
+    left: 0;
+    position: absolute;
+    top: 498px;
+    width: 638px;
+  }
+  
+  .heros .img {
+    height: 76px;
+    left: -4px;
+    position: absolute;
+    top: 0;
+    width: 86px;
+  }
+  
+  .heros .status {
+    height: 892px;
+    left: 785px;
+    position: absolute;
+    top: 65px;
+    width: 569px;
+  }
+  
+  .heros .overlap-group {
+    height: 232px;
+    left: 83px;
+    position: absolute;
+    top: 12px;
+    width: 487px;
+  }
+  
+  .heros .status-2 {
+    background-color: #d9d9d9;
+    height: 196px;
+    left: 0;
+    position: absolute;
+    top: 35px;
+    width: 487px;
+  }
+  
+  .heros .status-holder {
+    height: 152px;
+    left: 10px;
+    position: absolute;
+    top: 65px;
+    width: 467px;
+  }
+  
+  .heros .rectangle-3 {
+    background-color: #462222;
+    height: 43px;
+    left: 243px;
+    position: absolute;
+    top: 0;
+    width: 224px;
+  }
+  
+  .heros .rectangle-4 {
+    background-color: #462222;
+    height: 43px;
+    left: 243px;
+    position: absolute;
+    top: 54px;
+    width: 224px;
+  }
+  
+  .heros .rectangle-5 {
+    background-color: #462222;
+    height: 43px;
+    left: 243px;
+    position: absolute;
+    top: 109px;
+    width: 224px;
+  }
+  
+  .heros .rectangle-6 {
+    background-color: #462222;
+    height: 43px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 224px;
+  }
+  
+  .heros .rectangle-7 {
+    background-color: #462222;
+    height: 43px;
+    left: 0;
+    position: absolute;
+    top: 54px;
+    width: 224px;
+  }
+  
+  .heros .rectangle-8 {
+    background-color: #462222;
+    height: 43px;
+    left: 0;
+    position: absolute;
+    top: 109px;
+    width: 224px;
+  }
+  
+  .heros .class {
+    background-color: #d9d9d9;
+    height: 37px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 487px;
+  }
+  
+  .heros .class-lable {
+    background-color: #754242;
+    height: 29px;
+    left: 94px;
+    position: relative;
+    top: 8px;
+    width: 299px;
+  }
+  
+  .heros .rectangle-9 {
+    background-color: #d9d9d9;
+    height: 892px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 58px;
+  }
+  
+  .heros .hero {
+    background-color: #d9d9d9;
+    height: 593px;
+    left: 83px;
+    position: absolute;
+    top: 280px;
+    width: 487px;
+  }
+  
+  .heros .class-path {
+    background-image: url(https://c.animaapp.com/xBpXUP38/img/classes.png);
+    background-size: 100% 100%;
+    height: 58px;
+    left: 106px;
+    position: absolute;
+    top: 96px;
+    width: 641px;
+  }
+  
+  .heros .rectangle-10 {
+    background-color: #d9d9d9;
+    height: 37px;
+    left: 23px;
+    position: relative;
+    top: 10px;
+    width: 585px;
+  }
+  
